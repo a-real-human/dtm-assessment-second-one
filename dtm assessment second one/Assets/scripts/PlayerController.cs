@@ -30,8 +30,8 @@ public class PlayerController : MonoBehaviour
     {
         //gets player's input 
         horizontalInput = Input.GetAxis("Horizontal");
-        //accelerate left or right
-        playerRb.AddForce(Vector2.right * horizontalInput * speed, ForceMode2D.Force);
+        //move left or right
+        transform.Translate(Vector2.right * Time.deltaTime * speed * horizontalInput);
         //jump with a collision detection
         if (Input.GetKeyDown(KeyCode.Space) && isOnGround)
         {
