@@ -11,9 +11,9 @@ public class PlayerController : MonoBehaviour
     //player rigidbody
     private Rigidbody2D playerRb;
     //how much force the player jumps with
-    public float jumpForce;
+    private float jumpForce = 75.0f;
     //how much gravity force there is 
-    public float gravityModifier;
+    private float gravityModifier = 10.0f;
     //boolian variable to prevent the player from absing the jump mechanic 
     public bool isOnGround = true;
     // Start is called before the first frame update
