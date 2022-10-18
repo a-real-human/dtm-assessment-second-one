@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    // 
+    public Animator animator;
+    //
+    private bool m_FacingRight = true;
     //player controlls
     public float horizontalInput;
     //speed variable
@@ -30,6 +34,8 @@ public class PlayerController : MonoBehaviour
     {
         //gets player's input 
         horizontalInput = Input.GetAxis("Horizontal");
+
+        animator.SetFloat("Speed", Mathf.Abs(horizontalInput));
         //move left or right
         transform.Translate(Vector2.right * Time.deltaTime * speed * horizontalInput);
         //jump with a collision detection
@@ -40,6 +46,30 @@ public class PlayerController : MonoBehaviour
             //sets the isOnGround variable to false to prevent the playe from abusing the jump mechanic
             isOnGround = false;
         }
+
+        // If the input is moving the player right and the player is facing left...
+        if (horizontalInput  > 0 && !m_FacingRight)
+        {
+            // ... flip the player.
+            Flip();
+        }
+        // Otherwise if the input is moving the player left and the player is facing right...
+        else if (horizontalInput < 0 && m_FacingRight)
+        {
+            // ... flip the player.
+            Flip();
+        }
+
+    }
+    
+    private void Flip()
+    {
+        // Switch the way the player is labelled as facing
+        m_FacingRight = !m_FacingRight;
+        // Multiply the player's x local scale by -1.
+        Vector3 theScale = transform.localScale;
+        theScale.x *= -1;
+        transform.localScale = theScale;
     }
     //collion detection
     private void OnCollisionEnter2D(Collision2D collision)

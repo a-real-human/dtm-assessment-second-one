@@ -4,9 +4,18 @@ using UnityEngine;
 
 public class weirdEnemy1 : MonoBehaviour
 {
+    private bool Touched = false;
+
+    void Update()
+    {
+        if (Touched)
+             transform.Translate(Vector2.right * Time.deltaTime * 25 *-1);
+
+
+    }
+
     IEnumerator coroutine10s()
     {
-        transform.Translate(Vector2.right * 100);
         //yield on a new YieldInstruction that waits for 10 seconds.
         yield return new WaitForSeconds(10);
         //destroys this game object
@@ -14,6 +23,7 @@ public class weirdEnemy1 : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
+       Touched = true;
        StartCoroutine(coroutine10s());
     }
 }
