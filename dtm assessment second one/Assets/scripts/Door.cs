@@ -6,7 +6,7 @@ public class Door : MonoBehaviour
 {
 
     //how many items there are in the level
-    public int Items = 4;
+    public int Items;
     //this allows this script to detect when the items are collected
     public List<GameObject> ItemsAtStart;
     //method to detect how many items remain
