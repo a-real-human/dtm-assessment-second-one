@@ -15,7 +15,7 @@ public class collectable : MonoBehaviour
         //this "talks to" the gamemanager object and allows this script to call a specific component  on that object
         gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
         //this "talks to" the  gateway object and allows this script to call a specific component on that object
-        door = GameObject.Find("gateway").GetComponent<Door>();
+        door = GameObject.Find("Door").GetComponent<Door>();
     }
     //detects collisions
     private void OnTriggerEnter2D(Collider2D other)
