@@ -4,26 +4,28 @@ using UnityEngine;
 
 public class weirdEnemy1 : MonoBehaviour
 {
-    private bool Touched = false;
+    xRange
+
+    // Keeps the player from falling off the platform by detecting if the player is beyond the xRange and stops the playing from moving beyound the xRange
+        if (transform.position.x < xRange)
+        {
+            transform.position = new Vector3(xRange, transform.position.y, transform.position.z);
+}
+if (transform.position.x > -xRange)
+{
+    transform.position = new Vector3(-xRange, transform.position.y, transform.position.z);
+}
+void Start()
+    {
+        StartCoroutine(coroutine10s());
+    }
+
 
     void Update()
     {
-        if (Touched)
-             transform.Translate(Vector2.right * Time.deltaTime * 25 *-1);
-
-
-    }
-
-    IEnumerator coroutine10s()
-    {
-        //yield on a new YieldInstruction that waits for 10 seconds.
-        yield return new WaitForSeconds(10);
-        //destroys this game object
+        transform.Translate(Vector2.right * Time.deltaTime * 10 *-1);
+        if 
         Destroy(gameObject);
     }
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-       Touched = true;
-       StartCoroutine(coroutine10s());
-    }
+
 }
