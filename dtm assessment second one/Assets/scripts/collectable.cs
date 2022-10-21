@@ -18,13 +18,16 @@ public class collectable : MonoBehaviour
         door = GameObject.Find("Door").GetComponent<Door>();
     }
     //detects collisions
-    private void OnTriggerEnter2D(Collider2D other)
+    void OnTriggerEnter2D(Collider2D other)
     {
-        //destorys torch
-        Destroy(gameObject);
-        //decreases the number of items left to find in the level
-        door.UpdateItems(-1);
-        //increases the score
-        gameManager.UpdateScore(1);
+        if (other.CompareTag("Player"))
+        {
+            //decreases the number of items left to find in the level
+            door.UpdateItems(-1);
+            //increases the score
+            gameManager.UpdateScore(1);
+            //destroyes the item
+            Destroy(gameObject);
+        }
     }
 }

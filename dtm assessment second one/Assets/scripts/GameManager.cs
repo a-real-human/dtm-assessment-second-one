@@ -5,16 +5,25 @@ using TMPro;
 public class GameManager : MonoBehaviour
 {
     //score
-    private int score;
+    private int score = 0;
     //to display the score
     public TextMeshProUGUI scoreText;
     //detect when the items are collected
     public List<GameObject> collectables;
-    // Start is called before the first frame update
     public int NumberOfItems;
+    private bool Beginning = true;
+    // Start is called before the first frame update
+
+
     void Start()
     {
         score = 0;
+        if (Beginning == true)
+        {
+            scoreText.text = "you have collected: " + score + "  out of " + NumberOfItems;
+            Beginning = false;
+        }
+
 
     }
     //TO UPDATE SCORE
@@ -22,7 +31,7 @@ public class GameManager : MonoBehaviour
     {
         //increases the score
         score += scoreToAdd;
-        scoreText.text = "you have collected: " + score + "out of:" +NumberOfItems;
+        scoreText.text = "you have collected: " + score + "  out of " + NumberOfItems;
     }
 }
 
