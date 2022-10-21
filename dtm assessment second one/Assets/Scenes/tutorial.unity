@@ -226,6 +226,30 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 83
       objectReference: {fileID: 0}
+    - target: {fileID: 8685936177681722133, guid: 14147853f7a0cd34f9b2dc51c9a73c8d, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8685936177681722133, guid: 14147853f7a0cd34f9b2dc51c9a73c8d, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8685936177681722133, guid: 14147853f7a0cd34f9b2dc51c9a73c8d, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8685936177681722133, guid: 14147853f7a0cd34f9b2dc51c9a73c8d, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8685936177681722133, guid: 14147853f7a0cd34f9b2dc51c9a73c8d, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 170
+      objectReference: {fileID: 0}
+    - target: {fileID: 8685936177681722133, guid: 14147853f7a0cd34f9b2dc51c9a73c8d, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -60
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 14147853f7a0cd34f9b2dc51c9a73c8d, type: 3}
 --- !u!1001 &422185977
@@ -241,11 +265,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 495538194494695673, guid: 1706da59e3bd1104bbed440210e14a2c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.32
+      value: 8.91
       objectReference: {fileID: 0}
     - target: {fileID: 495538194494695673, guid: 1706da59e3bd1104bbed440210e14a2c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.29
+      value: -2.24
       objectReference: {fileID: 0}
     - target: {fileID: 495538194494695673, guid: 1706da59e3bd1104bbed440210e14a2c, type: 3}
       propertyPath: m_LocalPosition.z
@@ -29192,6 +29216,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1392386478}
     - target: {fileID: 6823560772888086567, guid: ed2d30f0f64272641957b188bec01b1a, type: 3}
+      propertyPath: offset.x
+      value: -14
+      objectReference: {fileID: 0}
+    - target: {fileID: 6823560772888086567, guid: ed2d30f0f64272641957b188bec01b1a, type: 3}
+      propertyPath: offset.y
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 6823560772888086567, guid: ed2d30f0f64272641957b188bec01b1a, type: 3}
       propertyPath: spawnRangeXNegative
       value: 13
       objectReference: {fileID: 0}
@@ -29213,11 +29245,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6823560772888086569, guid: ed2d30f0f64272641957b188bec01b1a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 12.47
+      value: 15.89
       objectReference: {fileID: 0}
     - target: {fileID: 6823560772888086569, guid: ed2d30f0f64272641957b188bec01b1a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.55
+      value: -2.1
       objectReference: {fileID: 0}
     - target: {fileID: 6823560772888086569, guid: ed2d30f0f64272641957b188bec01b1a, type: 3}
       propertyPath: m_LocalPosition.z
@@ -30050,8 +30082,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Hello\nin this game you play as a person who needs to collect various
     treasures from a dark dungeon and you must avoid these faces  \nif you get the
-    key you can leave onec you have collected all the items\n\ngood luck.\ngo -->
-    to start \n"
+    key you can leave once you have collected all the items\n\ngood luck.\ngo --> 
+    \n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

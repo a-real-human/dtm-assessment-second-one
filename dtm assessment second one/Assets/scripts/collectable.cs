@@ -19,7 +19,7 @@ public class collectable : MonoBehaviour
     }
     //detects collisions
     void OnTriggerEnter2D(Collider2D other)
-    {
+    {	//compares tag of the other object if it has the player tag then it while set to true and do the things below
         if (other.CompareTag("Player"))
         {
             //decreases the number of items left to find in the level

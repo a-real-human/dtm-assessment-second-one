@@ -19,11 +19,12 @@ public class Door : MonoBehaviour
     //method to detect how many keys remain
     public void UpdateKeys(int KeysLeft)
     {
+	//updates the keys
         Keys += KeysLeft;
     }
 
     private void OnTriggerEnter2D(Collider2D other)
-        { 
+        { //deletes the door if all the keys and items are collected in the level
         if (Items == 0 && Keys == 0)
             {
                 //this effectively opens the "door" and allows the player to go to the next level

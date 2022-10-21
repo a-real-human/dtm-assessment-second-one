@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class quit : MonoBehaviour
 {
-    //so it will go to the death scene when player collides with the gameobject
+    //detects collisions 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        
+        //quits the game
         Application.Quit();
     }
 }

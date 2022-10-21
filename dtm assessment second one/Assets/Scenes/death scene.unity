@@ -181,7 +181,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "         you failed to leave \nyou can try again or give up\n                   
+  m_text: "         you failed to leave \nyou can give up or try again\n                   
     <---           --->\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1440,11 +1440,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2079478222996542617, guid: 7def4f836d386c54aa9807e8b48c27c7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.7695968
+      value: 20.94
       objectReference: {fileID: 0}
     - target: {fileID: 2079478222996542617, guid: 7def4f836d386c54aa9807e8b48c27c7, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.1112286
+      value: -0.94
       objectReference: {fileID: 0}
     - target: {fileID: 2079478222996542617, guid: 7def4f836d386c54aa9807e8b48c27c7, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1501,11 +1501,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7711782341550231734, guid: 939798073938ba140baa66434bf653c0, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 20.62
+      value: -2.73
       objectReference: {fileID: 0}
     - target: {fileID: 7711782341550231734, guid: 939798073938ba140baa66434bf653c0, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.1112286
+      value: -1.33
       objectReference: {fileID: 0}
     - target: {fileID: 7711782341550231734, guid: 939798073938ba140baa66434bf653c0, type: 3}
       propertyPath: m_LocalPosition.z
